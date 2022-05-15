@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z#_#9!aih5eu$ht2!9!*sb!e_lqk@v32+%zi9r(*ch(efvvh23'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -83,17 +83,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     },
 
-    'profile_db': {
-        'ENGINE':'django.db.backends.postgresql',
-        'NAME':'Profile_api',
-        'PASSWORD': '1234',
-        'USER':'postgres',
-        'PORT':'5432',
+#     'profile_db': {
+#         'ENGINE':'django.db.backends.postgresql',
+#         'NAME':'Profile_api',
+#         'PASSWORD': '1234',
+#         'USER':'postgres',
+#         'PORT':'5432',
        
-    }
+#     }
 }
 
-DATABASES_ROUTERS=['router.db_routers.UserProfile']
+# DATABASES_ROUTERS=['router.db_routers.UserProfile']
 
 
 # Password validation
